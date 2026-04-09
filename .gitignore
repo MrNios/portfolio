@@ -1,5 +1,5 @@
 /target
-/dist
+# /dist — committed for Cloudflare Pages direct deploy
 *.lock.bak
 .env
 .DS_Store
