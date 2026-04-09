@@ -1,0 +1,6 @@
+/target
+/dist
+*.lock.bak
+.env
+.DS_Store
+portfolio latest.txt

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aston M. Shand — Electrical & Computer Engineer and Software Developer from Jamaica. Portfolio of engineering designs, Rust web applications, AI tooling, and quantitative trading systems.">
+    <meta name="author" content="Aston M. Shand">
+    <meta name="theme-color" content="#0b0f17">
+    <meta property="og:title" content="Aston M. Shand — Engineer & Developer">
+    <meta property="og:description" content="Electrical & Computer Engineer. Rust, Python, MEP design, and AI tooling.">
+    <meta property="og:type" content="website">
+    <title>Aston M. Shand — Engineer &amp; Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1">
+</head>
+<body data-theme="dark">
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">
+                <span class="brand-mark">AS</span>
+                <span class="brand-name">Aston Shand</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main id="top">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Available for select engagements
+                </div>
+                <h1 class="hero-title">
+                    Electrical engineer<br>
+                    building <span class="gradient-text">software that ships</span>.
+                </h1>
+                <p class="hero-sub">
+                    I design power systems for real buildings and write the code that runs in production.
+                    Based in Jamaica. Working across electrical design, Rust web applications,
+                    AI tooling, and quantitative trading.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View work
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-num">{{ project_count }}</div>
+                        <div class="stat-label">Projects shipped</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">{{ engineering_count }}</div>
+                        <div class="stat-label">Engineering builds</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">{{ software_count }}</div>
+                        <div class="stat-label">Software systems</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">Years in practice</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-grid" aria-hidden="true"></div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">About</span>
+                    <h2>Two disciplines, one engineer.</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I&rsquo;m a <strong>Project Engineer</strong> at DKAM Engineering Solutions in Portmore,
+                            Jamaica, with a BEng in Electrical and Computer Engineering from the University of Technology.
+                            My day job is planning, coordinating, and delivering electrical installations.
+                            My off-hours are spent building software that actually reaches users.
+                        </p>
+                        <p>
+                            Over the past three years I&rsquo;ve designed power layouts, solar PV systems, ELV networks,
+                            and lighting schemes for commercial and residential buildings &mdash; while in parallel
+                            shipping a live Rust web application, a validated MT5 trading strategy, an AI assistant
+                            embedded in Revit, and an EPA SPCC compliance calculator used by other engineers.
+                        </p>
+                        <p>
+                            I like problems where the physical and digital meet: calculators that enforce real
+                            regulations, automation that replaces spreadsheets, and engineering tools that respect
+                            the user&rsquo;s time.
+                        </p>
+                    </div>
+                    <aside class="about-card">
+                        <div class="card-row">
+                            <span class="card-key">Role</span>
+                            <span class="card-val">Project Engineer / Manager</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="card-key">Company</span>
+                            <span class="card-val">DKAM Engineering Solutions</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="card-key">Location</span>
+                            <span class="card-val">Greater Portmore, Jamaica</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="card-key">Degree</span>
+                            <span class="card-val">BEng Electrical &amp; Computer Eng., UTech</span>
+                        </div>
+                        <div class="card-row">
+                            <span class="card-key">Focus</span>
+                            <span class="card-val">Electrical design &bull; Rust &bull; AI tooling</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Experience</span>
+                    <h2>Where I&rsquo;ve worked.</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="timeline-item current">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-head">
+                                <h3>Project Engineer / Manager</h3>
+                                <span class="timeline-date">Sep 2025 &mdash; Present</span>
+                            </div>
+                            <p class="timeline-company">DKAM Engineering Solutions Limited &bull; Portmore, Jamaica</p>
+                            <ul class="timeline-bullets">
+                                <li>Project planning, scheduling, and execution across electrical installations</li>
+                                <li>Technical coordination and documentation for multi-trade projects</li>
+                                <li>Resource and vendor management; client liaison</li>
+                                <li>Reporting and problem-solving on active sites</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-head">
+                                <h3>Electrical Engineer</h3>
+                                <span class="timeline-date">Aug 2023 &mdash; Sep 2025</span>
+                            </div>
+                            <p class="timeline-company">HTG Engineering &bull; Kingston, Jamaica</p>
+                            <ul class="timeline-bullets">
+                                <li>Electrical design for commercial and residential buildings</li>
+                                <li>Solar PV system design for renewable energy projects</li>
+                                <li>Pole-line design for distribution networks</li>
+                                <li>ELV design and 3D lighting design with Enscape / TwinMotion renders</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-head">
+                                <h3>Electrical Design Engineer Intern</h3>
+                                <span class="timeline-date">Nov 2022 &mdash; Aug 2023</span>
+                            </div>
+                            <p class="timeline-company">Ken Warren Associates Ltd. &bull; Kingston, Jamaica</p>
+                            <ul class="timeline-bullets">
+                                <li>Designed building power layouts</li>
+                                <li>Modified electrical CAD designs and reviewed project designs</li>
+                                <li>Collected data for new designs and projects</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-head">
+                                <h3>Electrical Design Engineer Intern</h3>
+                                <span class="timeline-date">Mar 2022 &mdash; May 2022</span>
+                            </div>
+                            <p class="timeline-company">Ken Warren Associates Ltd. &bull; Kingston, Jamaica</p>
+                            <ul class="timeline-bullets">
+                                <li>Designed building power layouts</li>
+                                <li>Modified electrical CAD designs and reviewed project designs</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Selected work</span>
+                    <h2>Projects.</h2>
+                    <p class="section-desc">A sample of engineering and software work &mdash; filter by discipline.</p>
+                </div>
+                <div class="filters" role="tablist">
+                    <button class="filter active" data-filter="all">All</button>
+                    <button class="filter" data-filter="Engineering">Engineering</button>
+                    <button class="filter" data-filter="Software">Software</button>
+                    <button class="filter" data-filter="AI">AI</button>
+                    <button class="filter" data-filter="Quant">Quant</button>
+                    <button class="filter" data-filter="Business">Business</button>
+                </div>
+                <div class="project-grid">
+                    {% for project in projects %}
+                    <article class="project-card" data-categories='{{ project.categories|join(",") }}' data-slug="{{ project.slug }}">
+                        <header class="project-head">
+                            <div class="project-meta">
+                                <span class="project-year">{{ project.year }}</span>
+                                <span class="project-status" data-status="{{ project.status|lower }}">{{ project.status }}</span>
+                            </div>
+                            <h3 class="project-title">{{ project.title }}</h3>
+                            <p class="project-tagline">{{ project.tagline }}</p>
+                        </header>
+                        <p class="project-desc">{{ project.description }}</p>
+                        <ul class="project-highlights">
+                            {% for h in project.highlights %}
+                            <li>{{ h }}</li>
+                            {% endfor %}
+                        </ul>
+                        <footer class="project-foot">
+                            <div class="stack">
+                                {% for tech in project.stack %}
+                                <span class="tech">{{ tech }}</span>
+                                {% endfor %}
+                            </div>
+                            {% match project.link %}
+                            {% when Some with (url) %}
+                            <a href="{{ url }}" target="_blank" rel="noopener" class="project-link">
+                                Visit
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                            </a>
+                            {% when None %}
+                            {% endmatch %}
+                        </footer>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Capabilities</span>
+                    <h2>Skills &amp; tools.</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Electrical design</h3>
+                        <ul class="skill-list">
+                            <li>AutoCAD MEP</li>
+                            <li>Revit</li>
+                            <li>Dialux Evo</li>
+                            <li>PVsyst</li>
+                            <li>Enscape / TwinMotion</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Software</h3>
+                        <ul class="skill-list">
+                            <li>Rust &bull; Axum &bull; Askama</li>
+                            <li>Python 3.12</li>
+                            <li>C++</li>
+                            <li>SQLite</li>
+                            <li>JavaScript / HTML / CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Hardware &amp; test</h3>
+                        <ul class="skill-list">
+                            <li>System Verilog / Verilog</li>
+                            <li>Altera DE2 FPGAs</li>
+                            <li>LabVIEW</li>
+                            <li>Oscilloscopes &amp; signal generators</li>
+                            <li>Multisim / Quartus</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Algorithms &amp; signals</h3>
+                        <ul class="skill-list">
+                            <li>MATLAB</li>
+                            <li>Digital signal processing</li>
+                            <li>Control systems</li>
+                            <li>Quantitative trading (MQL5)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Domain expertise</h3>
+                        <ul class="skill-list">
+                            <li>EPA SPCC (40 CFR 112)</li>
+                            <li>Solar PV system sizing</li>
+                            <li>Photometric design</li>
+                            <li>ELV &amp; pole-line design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Delivery</h3>
+                        <ul class="skill-list">
+                            <li>Project planning &amp; scheduling</li>
+                            <li>Vendor &amp; resource management</li>
+                            <li>Technical documentation</li>
+                            <li>Client liaison</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-copy">
+                        <span class="eyebrow">Contact</span>
+                        <h2>Let&rsquo;s build something.</h2>
+                        <p>
+                            Open to engineering consulting, software contracts, and interesting
+                            collaborations. Fastest way to reach me is email.
+                        </p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:Aston.Shand@outlook.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+                            </div>
+                            <div class="method-body">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">Aston.Shand@outlook.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+18768719855" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="method-body">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">(876) 871-9855</span>
+                            </div>
+                        </a>
+                        <div class="contact-method static">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="method-body">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Greater Portmore, Jamaica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Aston M. Shand. Built with Rust, Axum, and Askama.</p>
+            <a href="#top" class="back-top">Back to top &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js?v=1"></script>
+</body>
+</html>

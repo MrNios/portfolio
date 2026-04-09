@@ -1,0 +1,21 @@
+[package]
+name = "portfolio"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+askama = "0.12"
+askama_axum = "0.4"
+tokio = { version = "1", features = ["full"] }
+tower = "0.5"
+tower-http = { version = "0.5", features = ["fs", "trace", "compression-gzip"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+serde = { version = "1", features = ["derive"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
